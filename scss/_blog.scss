@@ -1,0 +1,10 @@
+.blog-more{
+    font-size:30px;
+}
+
+//bolg-inpage
+.undo-redo a{
+    &:hover{
+        color:$primary !important;
+    }
+}

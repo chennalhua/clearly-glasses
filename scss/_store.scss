@@ -1,0 +1,13 @@
+.store-branch{
+    .store-icon{
+        width:22px;
+        height:22px;
+    }
+    button{
+        border: none !important;
+        &:hover{
+            background:$primary !important;
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+.page-nav{
+    &-link{
+        font-size:32px;
+        border-bottom:8px solid transparent;
+        @include size-lg(){
+            font-size:25px;
+        }
+        @include size-sm(){
+            font-size:16px;
+        }
+        &:hover{
+            border-bottom:8px solid $primary;
+        }
+        img{
+            width:32px;
+            @include size-lg(){
+                width:28px;
+            }
+        }
+        
+    }
+    .active{
+        border-bottom:8px solid $primary;
+    }
+}
+

@@ -1,0 +1,120 @@
+a:hover{
+    text-decoration: none;
+}
+
+.logo{
+    background: url(../img/logo.png) no-repeat center ;
+    width: 80px;
+    padding:15px 0;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// nav , footer
+.nav-link{
+    color:$light;
+    &:hover{
+        background: $secondary;
+        color:$light;
+    }
+}
+
+// nav 選單
+nav{
+    .navbar-toggler-icon{
+        background: url(../img/icon/icon-menu.svg) no-repeat;
+        background-size: 100%;
+    }
+}
+
+.mobile-nav{
+    ul{
+        background:$primary;
+        li{
+            display: block;
+            width: 100%;
+            border-top:1px solid $light;
+            font-size: 20px;
+            padding: 8px 0;
+            &:hover{
+                background:$secondary;
+            } 
+        }
+    }
+}
+
+
+// page-header
+.page-header{
+    background:url(../img/qa.png) no-repeat center center;
+    background-size: cover;
+    padding-top: 200px;
+    @include size-md(){
+        padding-top: 115px;
+    }
+    .page-title{
+        font-size: 64px;
+        @include size-md(){
+            font-size: 48px;
+            img{
+                width:30px;
+            }
+        }
+        @include size-sm(){
+            font-size: 30px;
+            img{
+                width:16px;
+            }
+        }
+    }
+}
+
+
+//footer
+footer{
+    .footer-info{
+        border-bottom:1px solid $light;
+    }
+    .contact{
+        font-size: 36px;
+        @include size-md(){
+            font-size:24px;
+            img{
+                width:20px;
+            }
+        }
+        @include size-sm{
+            font-size:16px;
+        }
+    }
+}
+
+// optical,sunglasses 共同
+.pro-name{
+    font-size:20px;
+}
+
+.pro-color{
+    .color-block{
+        width: 24px;
+        height:24px;
+        border-radius: 4px;
+    }
+}
+
+//optical,blog 共同
+
+.page-list{
+    a{
+        color:$secondary;
+        &:hover{
+            background:$secondary;
+            color:$light;
+        }
+    }
+    .page-active{
+        background:$secondary;
+        color:$light;
+    }
+}

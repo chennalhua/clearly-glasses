@@ -1,0 +1,99 @@
+.banner{
+    background:url(../img/index/banner.png) no-repeat;
+    background-size:cover;
+    padding:300px 0;
+    @include size-lg(){
+        background:url(../img/index/banner-sm.png) no-repeat;
+        background-size:cover;
+    }
+    p{
+        font-size:36px;
+        @include size-lg(){
+            font-size:20px;
+        }
+        @include size-sm(){
+            font-size:16px;
+        }
+    }
+    h2{
+        font-size:64px;
+        @include size-lg(){
+            font-size:48px;
+        }
+        @include size-sm(){
+            font-size:32px;
+        }
+    }
+}
+
+.pro-icon{
+    height: 120px;
+}
+
+.classic{
+    .name-icon{
+        @include size-lg(){
+            width:32px;
+        } 
+    }
+    .classic-photo{
+        position: relative;
+        &:hover{
+            background:$info;
+        }
+    }
+    .name-area{
+        .name{
+            @include size-lg(){
+                font-size:23px;
+            }
+            @include size-sm(){
+                color:$light;
+            } 
+        }
+        @include size-sm(){
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            &:hover{
+                background:rgba($info , .5);
+            }
+        } 
+    }
+}
+
+.name{
+    font-size:38px;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-style:italic;
+    color:$primary;
+}
+
+.cooperation{
+    background:url(../img/index/bg.png) no-repeat center;
+    background-size:cover;
+    .coo-area{
+        position: relative;
+    }
+    a{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:hover{
+            background:rgba($info , .5);
+        }
+    }
+}
+
+.contact{
+    .form-control{
+        background:transparent;
+        border:1px solid $secondary;
+        border-radius: 0;
+    }
+}
