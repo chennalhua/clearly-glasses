@@ -8,3 +8,11 @@
         color:$primary !important;
     }
 }
+
+.blog-menu{
+    .nav-link{
+        @include size-sm(){
+            padding: 8px;
+        }
+    }
+}

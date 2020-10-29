@@ -11435,4 +11435,10 @@ footer .contact {
 .undo-redo a:hover {
   color: #AA0601 !important;
 }
+
+@media (max-width: 576px) {
+  .blog-menu .nav-link {
+    padding: 8px;
+  }
+}
 /*# sourceMappingURL=all.css.map */
